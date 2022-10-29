@@ -1,0 +1,39 @@
+{
+    "app": {
+        "logLevel": "info"
+    },
+    "receiver": {
+        "host": "0.0.0.0",
+        "port": 8001
+    },
+    "db": {
+        "database": "",
+        "host": "",
+        "port": ,
+        "user": "",
+        "password": ".",
+        "table_prefix": ""
+
+    },
+    "gateway": {
+        "protocol": "http",
+        "host": "127.0.0.1",
+        "port": 8000,
+        "path": "sync/"
+    },
+    "web": {
+        "pages": {
+            "multisensor": {
+                "latest_data": {
+                    "refresh": 5
+                }
+            }
+        },
+        "host": "0.0.0.0",
+        "port": 8002
+    },
+    "auth": {
+        "secret": "",
+        "expiryInMinutes": 60
+    }
+}

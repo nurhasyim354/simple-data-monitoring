@@ -1,0 +1,49 @@
+{
+    "app": {
+        "title": "Cellular Data Receiver",
+        "name": "cellular-data-receiver",
+        "logLevel": "info"
+    },
+    "receiver": {
+        "id": "CELL01",
+        "host": "0.0.0.0",
+        "port": 8001
+    },
+    "db": {
+        "database": "heroku_3f2085ee30c1a7b",
+        "host": "us-cdbr-east-06.cleardb.net",
+        "port": 3306,
+        "user": "b6353818f985eb",
+        "password": "93fcc4e8",
+        "connectionLimit": 10, 
+        "connectTimeout": 10000,
+        "table_prefix": "test"
+
+    },
+    "gateway": {
+        "protocol": "http",
+        "host": "127.0.0.1",
+        "port": 8000,
+        "path": "sync/"
+    },
+    "web": {
+        "pages": {
+            "data": {
+                "latest_for_mtu_id": {
+                    "refresh": 20
+                }
+            },
+            "multisensor": {
+                "latest_data": {
+                    "refresh": 5
+                }
+            }
+        },
+        "host": "0.0.0.0",
+        "port": 8002
+    },
+    "auth": {
+        "secret": "TU5QEURlr7s8Hhbj3YzS",
+        "expiryInMinutes": 60
+    }
+}
