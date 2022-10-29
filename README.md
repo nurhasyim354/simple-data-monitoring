@@ -12,4 +12,5 @@ Tech Stacks:
 - JWT auth
 - React
 - MDB
+- Docker
 - Jest
